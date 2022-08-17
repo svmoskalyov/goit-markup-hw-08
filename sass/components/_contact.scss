@@ -2,6 +2,10 @@
   @extend %list;
   @include centeredFlex();
   margin-left: auto;
+
+  @media screen and (max-width: $tabletBefore) {
+    display: none;
+  }
 }
 
 .contact__item + .contact__item {

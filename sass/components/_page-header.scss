@@ -4,4 +4,8 @@
 
 .page-header__container {
   @include centeredFlex();
+
+  @media screen and (max-width: $tablet) {
+    min-height: 60px;
+  }
 }

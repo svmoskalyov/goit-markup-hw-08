@@ -1,8 +1,14 @@
 %logo {
-  @include itemTypography(700, 26px, 1.19);
+  // @include itemTypography(700, 26px, 1.19);
 
   font-family: getFont(logo), getFont(secondory);
   color: getColor(logo-main);
+
+  @media screen and (max-width: $tablet) {
+      @include itemTypography(700, 24px, 1.17);
+  }
+
+
 }
 
 .logo__text {
