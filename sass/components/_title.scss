@@ -1,0 +1,53 @@
+.title {
+  @include itemTypography(700, 36px, 1.17);
+
+  margin: 0;
+  margin-bottom: 50px;
+
+  color: getColor(text-primary);
+  text-align: center;
+}
+
+.subtitle {
+  @include itemTypography(700, 14px, 1.14);
+
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+}
+
+.join__subtitle,
+.subscribe__subtitle {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: getColor(text-white);
+}
+
+.hero__title {
+  @include itemTypography(900, 44px, 1.36);
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  max-width: 696px;
+
+  letter-spacing: 0.06em;
+  color: getColor(text-white);
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.features__title,
+.portfolio__title {
+  @extend %visually-hidden;
+}

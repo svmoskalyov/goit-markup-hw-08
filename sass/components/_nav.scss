@@ -1,0 +1,48 @@
+.nav {
+  margin-left: 93px;
+}
+
+.nav__list {
+  @extend %list;
+  @include centeredFlex();
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link {
+  @include itemTypography(500, 14px, 1.14);
+  @include itemTransition(color);
+
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  letter-spacing: 0.02em;
+  color: getColor(text-primary);
+
+  &:hover,
+  &:focus {
+    color: getColor(accent);
+  }
+
+  &--current {
+    color: getColor(accent);
+  }
+
+  &--current::after {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    background-color: getColor(accent);
+    border-radius: 2px;
+  }
+}

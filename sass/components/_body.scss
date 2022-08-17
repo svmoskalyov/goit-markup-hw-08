@@ -1,0 +1,6 @@
+body {
+    font-family: getFont(primary), getFont(secondory);
+    letter-spacing: 0.03em;
+    color: getColor(text-primary);
+    background-color: getColor(bg-body);
+}

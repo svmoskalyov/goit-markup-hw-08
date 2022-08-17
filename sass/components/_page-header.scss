@@ -1,0 +1,7 @@
+.page-header {
+  border-bottom: 1px solid getColor(bg-team);
+}
+
+.page-header__container {
+  @include centeredFlex();
+}

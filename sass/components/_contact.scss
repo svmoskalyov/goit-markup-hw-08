@@ -1,0 +1,28 @@
+.contact {
+  @extend %list;
+  @include centeredFlex();
+  margin-left: auto;
+}
+
+.contact__item + .contact__item {
+  margin-left: 50px;
+}
+
+.contact__link {
+  @include centeredFlex();
+  @include itemTypography(500, 14px, 1.14);
+  @include itemTransition(color);
+
+  letter-spacing: 0.02em;
+  color: getColor(text-secondory);
+
+  &:hover,
+  &:focus {
+    color: getColor(accent);
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
