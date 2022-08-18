@@ -1,32 +1,38 @@
-// @media screen and (min-width: $tablet) {
-// }
-// @import "../utils/visually-hidden";
-
 .nav {
-  margin-left: 93px;
+  margin-bottom: 306px;
 
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
   }
 }
 
 .nav__list {
   @extend %list;
-  @include centeredFlex();
+  @media screen and (min-width: 768px) {
+    @include centeredFlex();
+  }
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link {
-  @include itemTypography(500, 14px, 1.14);
+  @include itemTypography(500, 20px, 1.18);
   @include itemTransition(color);
+
+  @media screen and (min-width: 768px) {
+    @include itemTypography(500, 14px, 1.14);
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   position: relative;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   letter-spacing: 0.02em;
   color: getColor(text-primary);
@@ -41,6 +47,10 @@
   }
 
   &--current::after {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
     position: absolute;
     bottom: 0;
 

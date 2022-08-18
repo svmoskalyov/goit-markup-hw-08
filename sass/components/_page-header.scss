@@ -3,8 +3,7 @@
 }
 
 .page-header__container {
-  
-  @include centeredFlex();
+  // @include centeredFlex();
 
   @media screen and (max-width: 767px) {
     position: relative;

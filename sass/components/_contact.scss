@@ -1,20 +1,33 @@
 .contact {
   @extend %list;
-  @include centeredFlex();
-  margin-left: auto;
-
   @media screen and (max-width: 767px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include centeredFlex();
+    margin-left: auto;
   }
 }
 
 .contact__item + .contact__item {
-  margin-left: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    order: -1;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
 }
 
 .contact__link {
-  @include centeredFlex();
-  @include itemTypography(500, 14px, 1.14);
+  @media screen and (min-width: 768px) {
+    @include centeredFlex();
+    @include itemTypography(500, 14px, 1.14);
+  }
+
   @include itemTransition(color);
 
   letter-spacing: 0.02em;
@@ -26,7 +39,23 @@
   }
 }
 
+.contact__link[href^="tel"] {
+  @include itemTypography(500, 34px, 1.18);
+
+  color: getColor(accent);
+}
+
+.contact__link[href^="mailto"] {
+  @include itemTypography(500, 24px, 1.17);
+
+  color: getColor(text-secondory);
+}
+
 .contact__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   margin-right: 10px;
   fill: currentColor;
 }
