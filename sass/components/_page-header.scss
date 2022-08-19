@@ -3,8 +3,6 @@
 }
 
 .page-header__container {
-
-
   @media screen and (max-width: 767px) {
     position: relative;
     display: flex;
@@ -13,19 +11,9 @@
     height: 60px;
   }
 
-@media screen and (min-width: 768px) {
-    // @include centeredFlex();
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-// margin: auto;
-    // width: 768px;
-    // flex-basis: 768px;
-    // padding: 0 15px;
-// padding-right: 15px;
-
-  height: 80px;
-}
-
-
-
+    height: 80px;
+  }
 }

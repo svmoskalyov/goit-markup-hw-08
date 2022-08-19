@@ -1,29 +1,29 @@
 .nav {
-
-    @media screen and (max-width: 767px) {
-  margin-bottom: 306px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 306px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 87px;
   }
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
 
 .nav__list {
   @extend %list;
+
   @media screen and (min-width: 768px) {
     @include centeredFlex();
   }
 }
 
 .nav__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-right: 50px;
@@ -31,17 +31,16 @@
 }
 
 .nav__link {
-      @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     @include itemTypography(500, 40px, 1.18);
-    }
-
+  }
 
   @media screen and (min-width: 768px) {
     @include itemTypography(500, 14px, 1.14);
     padding-top: 32px;
     padding-bottom: 32px;
   }
- @include itemTransition(color);
+  @include itemTransition(color);
   @include itemTypography(500, 20px, 1.18);
 
   position: relative;

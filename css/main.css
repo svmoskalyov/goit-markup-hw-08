@@ -494,14 +494,13 @@ body {
             order: -1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__item + .contact__item {
     margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact__item + .contact__item {
-    margin-top: 0;
     margin-left: 30px;
   }
 }
