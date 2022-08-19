@@ -26,11 +26,11 @@
 }
 
 .hero__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     @include itemTypography(900, 26px, 1.62);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     @include itemTypography(900, 44px, 1.36);
     max-width: 696px;
   }
@@ -48,8 +48,16 @@
 }
 
 .modal__title {
+  @media screen and (max-width: 1199px) {
+    @include itemTypography(700, 20px, 1.5);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include itemTypography(700, 20px, 1.15);
+    max-width: 696px;
+  }
+
   margin-bottom: 12px;
-  font-size: 20px;
 }
 
 .features__title,

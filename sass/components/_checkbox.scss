@@ -2,14 +2,20 @@
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
-  width: 430px;
-  height: 24px;
   padding-left: 25px;
 
   text-align: left;
-  font-size: 14px;
-  line-height: 1.7;
   color: getColor(text-secondory);
+
+  @media screen and (max-width: 1199px) {
+    @include itemTypography(400, 12px, 1.17);
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include itemTypography(400, 14px, 1.7);
+    width: 430px;
+  }
 }
 
 .check__input {

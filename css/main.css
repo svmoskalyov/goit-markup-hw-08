@@ -137,7 +137,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     font-weight: 900;
     font-size: 26px;
@@ -145,7 +145,7 @@ body {
     text-decoration: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
@@ -157,7 +157,23 @@ body {
 
 .modal__title {
   margin-bottom: 12px;
-  font-size: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-decoration: none;
+    max-width: 696px;
+  }
 }
 
 .button {
@@ -710,14 +726,12 @@ body {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -726,6 +740,18 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
 }
 .is-hidden > .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.1);
@@ -815,13 +841,27 @@ body {
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
-  width: 430px;
-  height: 24px;
   padding-left: 25px;
   text-align: left;
-  font-size: 14px;
-  line-height: 1.7;
   color: #757575;
+}
+@media screen and (max-width: 1199px) {
+  .check {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-decoration: none;
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    width: 430px;
+  }
 }
 
 .check__input {

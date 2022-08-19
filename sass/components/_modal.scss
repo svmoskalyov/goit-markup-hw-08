@@ -1,30 +1,20 @@
 .modal {
-  // тимчасово - потів видалити
-  // display: none;
-
-  //   @media screen and (max-width: 767px) {
-  //   display: none;
-  // }
-
-  // позиціювання модального вікна
-  //   @media screen and (min-width: 767px) {
-  //     position: absolute;
-  //     top: 50%;
-  //     left: 0;
-  //     transform: translate(-50%, -50%);
-  //     width: 100%;
-  //     max-width: 500px;
-  // }
-
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  padding: 40px;
+  @media screen and (max-width: 767px) and (max-width: 1199px) {
+    max-width: 450px;
+    height: 609px;
+  }
 
-  width: 528px;
-  height: 581px;
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    height: 581px;
+  }
+
+  padding: 40px;
 
   background-color: getColor(bg-body);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
