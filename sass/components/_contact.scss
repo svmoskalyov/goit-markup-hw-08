@@ -1,5 +1,6 @@
 .contact {
   @extend %list;
+
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -7,8 +8,27 @@
   }
 
   @media screen and (min-width: 768px) {
-    @include centeredFlex();
-    margin-left: auto;
+        // @include centeredFlex();
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    flex-direction: column;
+    margin-left: 86px;
+    // margin-right: 15px;
+    // margin-left: auto;
+    // margin-bottom: 0;
+  }
+
+    @media screen and (min-width: 1200px) {
+        // @include centeredFlex();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    flex-direction: row;
+    // margin-left: 86px;
+    // margin-right: 15px;
+    margin-left: 315px;
+    // margin-bottom: 0;
   }
 }
 
@@ -18,7 +38,15 @@
     order: -1;
   }
   @media screen and (min-width: 768px) {
-    margin-left: 50px;
+    // order: 0;
+    // margin-left: 50px;
+    margin-top: 10px;
+  }
+
+    @media screen and (min-width: 1200px) {
+    // order: 0;
+    margin-top: 0;
+    margin-left: 30px;
   }
 }
 
@@ -40,15 +68,17 @@
 }
 
 .contact__link[href^="tel"] {
-  @include itemTypography(500, 34px, 1.18);
-
-  color: getColor(accent);
+  @media screen and (max-width: 767px) {
+    @include itemTypography(500, 34px, 1.18);
+    color: getColor(accent);
+  }
 }
 
 .contact__link[href^="mailto"] {
-  @include itemTypography(500, 24px, 1.17);
-
-  color: getColor(text-secondory);
+  @media screen and (max-width: 767px) {
+    @include itemTypography(500, 24px, 1.17);
+    color: getColor(text-secondory);
+  }
 }
 
 .contact__icon {
