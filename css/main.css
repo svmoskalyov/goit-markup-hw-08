@@ -277,7 +277,6 @@ body {
 .page-header {
   border-bottom: 1px solid #f5f4fa;
 }
-
 @media screen and (max-width: 767px) {
   .page-header__container {
     position: relative;
@@ -588,6 +587,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    margin: auto;
     padding-top: 200px;
     padding-bottom: 200px;
   }
