@@ -16,6 +16,10 @@
   margin-bottom: 10px;
 
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .join__subtitle,

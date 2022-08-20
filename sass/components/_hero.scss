@@ -8,6 +8,7 @@
 
 .hero__overlay {
   @media screen and (max-width: 767px) {
+    margin: auto;
     padding-top: 118px;
     max-width: 480px;
     height: 400px;

@@ -13,7 +13,7 @@
   margin: -1px;
 }
 
-.mobile-social__item, .contact, .nav__list, .social {
+.features__list, .mobile-social__item, .contact, .nav__list, .social {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -53,8 +53,14 @@ body.modal-open {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .social {
@@ -122,6 +128,11 @@ body.modal-open {
   margin-top: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .subtitle {
+    text-align: center;
+  }
 }
 
 .join__subtitle,
@@ -689,6 +700,7 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .hero__overlay {
+    margin: auto;
     padding-top: 118px;
     max-width: 480px;
     height: 400px;
@@ -914,4 +926,81 @@ body.modal-open {
 .check__input:checked ~ .check__icon {
   fill: #fff;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__item {
+    min-height: 226px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__item {
+    min-height: 224px;
+    width: calc((100% - 30px) / 2);
+  }
+  .features__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .features__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .features__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+.features__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+@media screen and (max-width: 1199px) {
+  .features__box {
+    min-height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__box {
+    width: 270px;
+    height: 120px;
+  }
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__text {
+  margin: 0;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */
