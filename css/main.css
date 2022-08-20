@@ -26,6 +26,10 @@ body {
   background-color: #fff;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
