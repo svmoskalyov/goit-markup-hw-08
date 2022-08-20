@@ -13,7 +13,7 @@
   margin: -1px;
 }
 
-.features__list, .mobile-social__item, .contact, .nav__list, .social {
+.wemake__list, .features__list, .mobile-social__item, .contact, .nav__list, .social {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1003,4 +1003,63 @@ body.modal-open {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .wemake {
+    display: none;
+  }
+}
+
+.wemake__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wemake__item {
+  width: calc((100% - 60px) / 3);
+}
+.wemake__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.wemake__tumb {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wemake__background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.wemake__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
