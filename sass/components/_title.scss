@@ -1,8 +1,15 @@
 .title {
-  @include itemTypography(700, 36px, 1.17);
-
   margin: 0;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include itemTypography(700, 28px, 1.18);
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include itemTypography(700, 36px, 1.17);
+    margin-bottom: 50px;
+  }
 
   color: getColor(text-primary);
   text-align: center;
