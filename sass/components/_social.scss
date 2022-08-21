@@ -1,5 +1,5 @@
 .social {
-  @include centeredFlex(inline-flex);
+  @include centeredFlex();
   @extend %list;
 }
 

@@ -4,13 +4,28 @@
   background-color: getColor(bg-footer);
 }
 
+.page-footer__container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include centeredFlex();
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .page-footer__logo {
-  display: inline-block;
   margin-bottom: 20px;
 }
 
 .address {
   @extend %list;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -43,23 +58,49 @@
   }
 }
 
-.page-footer__container {
-  @include centeredFlex();
-}
-
 .join {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+    margin-bottom: 102px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .subscribe {
-  margin-left: 93px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
-.subscribe__box {
-  @include centeredFlex();
+.subscribe__field {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
 }
 
 .subscribe__input {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
   padding: 16px;
   width: 358px;
   height: 50px;

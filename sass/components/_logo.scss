@@ -20,7 +20,12 @@
 
   &--revers {
     @extend %logo;
-    @include centeredFlex(inline-flex);
+    @include centeredFlex();
+
+    @media screen and (min-width: 1200px) {
+      @include centeredFlex(inline-flex);
+      justify-content: flex-start;
+    }
 
     margin-bottom: 20px;
     color: getColor(logo-revers);

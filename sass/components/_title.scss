@@ -31,7 +31,10 @@
 
 .join__subtitle,
 .subscribe__subtitle {
-  margin-top: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
+
   margin-bottom: 20px;
   color: getColor(text-white);
 }
