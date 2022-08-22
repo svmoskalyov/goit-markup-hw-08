@@ -8,6 +8,8 @@
 }
 
 .client__item {
+  @include centeredFlex();
+
   @media screen and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
 
