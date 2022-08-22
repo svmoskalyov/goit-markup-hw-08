@@ -409,11 +409,6 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav {
-    margin-bottom: 306px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav {
     margin-left: 87px;
@@ -508,10 +503,9 @@ body.modal-open {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 64px;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 @media screen and (min-width: 768px) {
@@ -554,9 +548,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .contact__item + .contact__item {
     margin-bottom: 32px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -632,8 +623,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
-  margin-right: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -667,17 +656,25 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .mobile-modal {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
     padding: 48px 40px;
-    min-width: 480px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
   .mobile-modal.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -692,6 +689,8 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }

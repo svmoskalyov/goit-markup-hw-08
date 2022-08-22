@@ -1,8 +1,6 @@
 .mobile-menu__button {
   position: relative;
   display: flex;
-  margin-top: 10px;
-  margin-right: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -37,28 +35,34 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
     padding: 48px 40px;
 
-    min-width: 480px;
-
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   
     }
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
+  // overflow: auto;
 }
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
