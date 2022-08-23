@@ -25,6 +25,12 @@
 
     .menu-btn__close {
       display: block;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        fill: getColor(accent);
+      }
     }
   }
 }

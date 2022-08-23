@@ -644,6 +644,10 @@ body.overflow {
 }
 .menu-btn.active .menu-btn__close {
   display: block;
+  cursor: pointer;
+}
+.menu-btn.active .menu-btn__close:hover, .menu-btn.active .menu-btn__close:focus {
+  fill: #2196f3;
 }
 
 .mobile-menu {
