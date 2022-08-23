@@ -23,36 +23,31 @@
           ><span class="logo__text">Web</span>Studio</a
         >
 
-        <div class="mobile-menu">
-          <button
-            class="mobile-menu__button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
+        <button class="mobile-menu__button menu-btn" type="button">
+          <svg
+            class="mobile-menu__icon"
+            width="40"
+            height="40"
+            aria-label="Мобільне меню"
           >
-            <svg
-              class="mobile-menu__icon"
-              width="40"
-              height="40"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use class="icon-menu" href="./images/icons.svg#menu40"></use>
-              <use class="icon-close" href="./images/icons.svg#close40"></use>
-            </svg>
-          </button>
-        </div>
+            <use class="menu-btn__menu" href="./images/icons.svg#menu40"></use>
+            <use
+              class="menu-btn__close"
+              href="./images/icons.svg#close40"
+            ></use>
+          </svg>
+        </button>
 
-        <div class="mobile-modal" id="menu-container" data-menu>
+        <div class="mobile-menu">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="./index.html">Студія</a>
+                <a class="nav__link nav__link--current" href="./index.html"
+                  >Студія</a
+                >
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./portfolio.html"
-                  >Портфоліо</a
-                >
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Контакти</a>
@@ -87,7 +82,7 @@
             <ul class="mobile-social">
               <li class="mobile-social__item">
                 <a
-                  href=""
+                  href="#"
                   class="mobile-social__link"
                   lang="en"
                   aria-label="Instagram"
@@ -96,7 +91,7 @@
               </li>
               <li class="mobile-social__item">
                 <a
-                  href=""
+                  href="#"
                   class="mobile-social__link"
                   lang="en"
                   aria-label="Twitter"
@@ -105,7 +100,7 @@
               </li>
               <li class="mobile-social__item">
                 <a
-                  href=""
+                  href="#"
                   class="mobile-social__link"
                   lang="en"
                   aria-label="Facebook"
@@ -114,7 +109,7 @@
               </li>
               <li class="mobile-social__item">
                 <a
-                  href=""
+                  href="#"
                   class="mobile-social__link"
                   lang="en"
                   aria-label="LinkedIn"
