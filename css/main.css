@@ -178,6 +178,7 @@ body.overflow {
     font-size: 26px;
     line-height: 1.62;
     text-decoration: none;
+    max-width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {

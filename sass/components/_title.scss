@@ -42,6 +42,7 @@
 .hero__title {
   @media screen and (max-width: 1199px) {
     @include itemTypography(900, 26px, 1.62);
+        max-width: 360px;
   }
 
   @media screen and (min-width: 1200px) {
