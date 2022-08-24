@@ -713,14 +713,6 @@ body.overflow {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    margin: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
 .hero__overlay {
   margin: auto;
   padding-top: 118px;
@@ -743,6 +735,8 @@ body.overflow {
 @media screen and (min-width: 1200px) {
   .hero__overlay {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header/header-1600.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-1600.jpg");
@@ -1003,6 +997,8 @@ body.overflow {
 @media screen and (max-width: 767px) {
   .features__item {
     min-height: 226px;
+  }
+  .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1154,7 +1150,7 @@ body.overflow {
   background-color: #fff;
 }
 @media screen and (max-width: 767px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1499,7 +1495,7 @@ body.overflow {
   border: 1px solid #eee;
 }
 @media screen and (max-width: 767px) {
-  .card__item {
+  .card__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
